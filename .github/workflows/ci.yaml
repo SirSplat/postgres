@@ -43,8 +43,8 @@ jobs:
       postgres_version: ${{ matrix.postgres_version }}
       variant: ${{ matrix.variant }}
       generate_dockerfile: ${{ inputs.generate_dockerfile }}
-      runner_debug: false
-      step_debug: false
+      runner_debug: true
+      step_debug: true
     secrets:
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
