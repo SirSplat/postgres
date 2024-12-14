@@ -15,7 +15,7 @@ jobs:
     uses: SirSplat/workflows/.github/workflows/build-and-push-docker-image.yaml@main
     with:
       directory: ${{ matrix.postgres_version }}/${{ matrix.variant }}
-      image_name: postgresql
+      image_name: postgres
       tag: ${{ matrix.postgres_version }}-${{ matrix.variant }}
       runner_debug: false
       step_debug: false
